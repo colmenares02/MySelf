@@ -3,62 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presentacion</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav {
-            /*background-color: #333;*/
-            /*color: white;*/
-            padding: 2em;
-            text-align: center;
-            font-size: 30px;
-            font-family: 'Indie Flower', cursive;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-
-        header {
-            /*height: 400px;*/
-            text-align: center;
-            padding: 2em 0;
-        }
-
-        main {
-            padding: 2em;
-            text-align: justify;
-            height: 200px;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-
-        .nav-header {
-            height: 100vh;
-            background: 
-                linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 30%), /* Degradado oscuro */
-                url('./img/fondo.jpg'); 
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <title>Presentación</title>
 </head>
 <body>
     <div class="nav-header">
@@ -66,20 +12,83 @@
             <a href="#inicio">Inicio</a>
             <a href="#experiencia">Servicios</a>
             <a href="#proyectos">Proyectos</a>
-            <a href="hobbies">Hobbies</a>
-            <a href="servicios">Servicios</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#servicios">Servicios</a>
             <a href="#contacto">Contacto</a>
         </nav>
         
         <header>
-            <h1>¡Hola! Soy Alejandro Colmenares</h1>
-            <p>Ingeniero en Mecatrónica Agrícola.</p>
+            <h1>¡Bienvenido al blog de Angel Colmenares!</h1>
+            <div class="foto-personal" id="foto-personal">
+                <img src="yo.jpg" alt="">
+            </div>
         </header>
     </div>
     
     <main>
-        <h2>Sobre mí</h2>
-        <p>Desarrollé mis estudios en la Universidad Autónoma Chapingo.</p>
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>Fiable, comprometido y analítico como ingeniero profesional, promoviendo y aportando ideas nuevas e innovadoras, con gran capacidad de aprendizaje rápido y comprometido con el beneficio del desempeño empresarial y profesional.</p>
+            <p>Desarrollé mis estudios en Ingeniería Mecatrónica Agrícola, en la Universidad Autónoma Chapingo.</p>
+        </section>
+
+        <section id="experiencia">
+            <h2>Experiencia</h2>
+            
+            <h3>AI Prompt y Revisión de Código - Outlier | Lemour Astrologer (2024)</h3>
+            <ul>
+                <li>Revisé y optimicé prompts y soluciones de código para mejorar la precisión y fiabilidad de los modelos de IA.</li>
+                <li>Analicé en profundidad scripts en Java y Python para garantizar funcionalidad, escalabilidad y buenas prácticas.</li>
+                <li>Proporcioné recomendaciones técnicas para mejorar la eficiencia del entrenamiento de IA y procesamiento de datos.</li>
+            </ul>
+            
+            <h3>Robot Agrícola para Pulverización de Líquidos (Proyecto Personal, 2024)</h3>
+            <ul>
+                <li>Diseñé y construí un robot agrícola para automatizar tareas de pulverización de líquidos en operaciones agrícolas.</li>
+                <li>Desarrollé la estructura con comunicación inalámbrica, control de motores mediante PWM, aplicaciones IoT y programación de microcontroladores para automatización agrícola.</li>
+            </ul>
+            
+            <h3>Prácticas en la Universidad de Eberswalde para el Desarrollo Sostenible (HNEE, Alemania, 2024)</h3>
+            <ul>
+                <li>Implementé soluciones de software para la visualización e interpretación de datos meteorológicos.</li>
+                <li>Capacité a estudiantes de maestría en Python en inglés, fortaleciendo sus habilidades en análisis de datos.</li>
+                <li>Desarrollé manuales de operación en inglés para sensores meteorológicos.</li>
+                <li>Realicé mantenimiento y configuración de equipos de medición meteorológica para garantizar mediciones precisas.</li>
+            </ul>
+            
+            <h3>Diseño y Desarrollo de la Sección de San Jacinto Ocotlán para la Web de COPUDA (Proyecto Colaborativo, 2024)</h3>
+            <ul>
+                <li>Diseñé e implementé la interfaz de la nueva sección usando HTML, CSS y JavaScript.</li>
+                <li>Implementé diseño responsivo para garantizar accesibilidad en todos los dispositivos y navegadores.</li>
+            </ul>
+            
+            <h3>Consultor Externo - COPUDA (2023)</h3>
+            <ul>
+                <li>Diseñé un sistema de regulación de riego por goteo para mejorar la eficiencia del uso del agua.</li>
+                <li>Implementé una tarjeta ESP32 programada en C++ para regular la apertura de válvulas en intervalos de tiempo.</li>
+                <li>Elaboré un manual detallado para la construcción de sistemas de riego automático.</li>
+            </ul>
+            
+            <h3>Desarrollo de Prototipo de Sistema de Dosificación de Alimento en Pellets (Proyecto Personal, 2023)</h3>
+            <ul>
+                <li>Diseñé y construí un prototipo de sistema automatizado para la dosificación de alimento en pellets.</li>
+                <li>Utilicé IoT (Blynk) para controlar y monitorear el proceso de dosificación de forma remota.</li>
+                <li>Programé un ESP32 en C++ para gestionar el control del sistema con precisión.</li>
+            </ul>
+            
+            <h3>Desarrollo de Carta Psicrométrica (Proyecto Personal, 2024)</h3>
+            <ul>
+                <li>Diseñé y programé una Carta Psicrométrica para analizar datos de aire húmedo.</li>
+                <li>Facilité el estudio e interpretación de las propiedades psicrométricas del aire en distintas condiciones ambientales.</li>
+            </ul>
+            
+            <h3>Desarrollo de un Sistema de Seguimiento de Rostros (Proyecto Personal, 2022)</h3>
+            <ul>
+                <li>Implementé algoritmos de visión por computadora para detectar y rastrear el movimiento de un rostro en tiempo real.</li>
+                <li>Utilicé la biblioteca OpenCV para optimizar el rendimiento en la captura y procesamiento de imágenes.</li>
+                <li>Ajusté parámetros del sistema para garantizar un procesamiento eficiente en dispositivos con recursos limitados.</li>
+            </ul>
+        </section>
     </main>
     
     <footer>
